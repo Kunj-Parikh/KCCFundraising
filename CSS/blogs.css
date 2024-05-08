@@ -1,0 +1,21 @@
+.post {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 20px;
+    border-radius: 6px;
+    margin-bottom: 50px;
+}
+.post:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 12px 40px 0 rgba(0, 0, 0, 0.3);
+    transition: .3s ease-in-out;
+}
+.main {
+    padding: 30px 35px 15px 35px;
+    display: flex;
+    flex-direction: column;
+}
+hr {
+    margin: 50px;
+}
+.container {
+    padding: 2px 16px;
+}

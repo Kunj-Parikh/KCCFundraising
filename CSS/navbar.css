@@ -1,0 +1,131 @@
+li {
+    list-style: none;
+}
+a, a:visited, a:active {
+    color:inherit;
+    text-decoration: none;
+}
+a:hover {
+    color: blue;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+hr.sep {
+    background-color: #DD510B;
+    width: 50px;
+    margin: auto;
+    height: 7px;
+    margin-bottom: 30px;
+}
+
+.bigdonate {
+    background-color: red;
+    border: 0;
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+html {
+    font-family: 'Roboto';
+}
+.hamburger {
+    display: none;
+}
+.center {
+    display: flex;
+    align-items: center;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1vh 2vw;
+    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(255,94,247,1) 17.8%, rgba(2,245,255,1) 100.2% );
+}
+
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #101010;
+}
+.nitem {
+    margin-left: 5vw;
+}
+.menu {
+    display:flex;
+    /* border-bottom: 1px solid black; */
+    justify-content: space-between;
+    align-items: center;
+}
+img {
+    width: 100px;
+}
+.logo {
+    padding-right: 10px;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    margin-top: 20px;
+    font-size: 20px;
+}
+.copyright {
+    text-align: center;
+    padding-bottom: 30px;
+}
+.footertext {
+    margin-left: 30px;
+
+}
+
+@media only screen and (max-width: 768px) {
+    .menu {
+        position:fixed;
+        left: -100%;
+        top: 5rem;
+        flex-direction: column;
+        background-color: #e1d1af;
+        width: 100%;
+        border-radius: 10px;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+    }
+    .menu.active {
+        left: 0;
+    }
+    .nitem {
+        margin: 2.5rem 0;
+    }
+    .hamburger {
+        display: block;
+        cursor: pointer;
+        padding-right: 15px;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+}

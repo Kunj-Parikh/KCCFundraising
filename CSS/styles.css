@@ -1,0 +1,80 @@
+.subsectext {
+    text-align: center;
+    color:#2b292e;
+    margin: 30px;
+}
+#startler {
+    z-index: -1;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJGXZHEB2V3JqUGWGNS7Uq3oRJOi9iT5pCWY9-UdvOTw&s"); /* IMAGE NEEDED */
+    background-size: cover;
+    position: relative;
+    height: 50vh;
+}
+#startlerText {
+    background-color: white;
+    color: firebrick;
+    font-size: 10vw;
+    font-weight: bold;
+    margin: 0 auto;
+    padding: 10px;
+    width: 50%;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    mix-blend-mode:screen;
+}
+.sm {
+    background-color: #1B4DE4;
+    border: 0px;
+    color: white;
+    border-radius: 16px;
+    padding: 8px 14px;
+    font-weight: 700;
+    margin: 20px 0px 50px 5px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#blogs {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    /* align-items: ; */
+}
+.blogphoto {
+    border-radius: 6px;
+    width: 300px;
+
+}
+.recentblogs {
+    margin-bottom: 30px;
+}
+
+.buttonwrap {
+    /* margin-left: 30px; */
+    display: flex;
+    justify-content: center !important;
+}
+.bigdonate {
+    margin-top: 30px;
+    font-size:larger;
+}
+.whydonate {
+    margin: 0px 30px 0px 30px;
+}
+@media only screen and (max-width: 654px) {
+    #startlerText {
+        width: 75%;
+    }
+
+}
+@media only screen and (max-width: 760px) {
+    .disappear {
+        display: none;
+    }
+}
