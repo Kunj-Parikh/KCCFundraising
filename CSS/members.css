@@ -1,5 +1,12 @@
+body {
+    font-family: 'Lato', sans-serif;
+}
+nav.navbar {
+    font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
 h2 {
-    margin: 7px;
+    margin: 27px;
     text-align: center;
     font-size: 30px;
 }
@@ -23,6 +30,7 @@ h2 {
     justify-content: space-around;
 }
 #bio {
-    margin: 5px 20px 30px 20px;
+    margin: 30px 50px 30px 50px;
     font-size: larger;
+
 }

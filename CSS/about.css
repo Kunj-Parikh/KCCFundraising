@@ -2,8 +2,22 @@
     text-align: center;
     margin-top: 30px;
     font-size: 35px;
+    padding-top: 50px;
 }
-p {
+ /* {
     margin: 20px 40px;
-    font-size: 22px;
+    font-size: larger;
+    line-height: 1.5;
+} */
+.essayBody {
+    line-height: 1.5;
+    margin: 40px 40px 60px 40px;
+    font-size: larger;
 }
+body {
+    font-family: 'Poetsen One', sans-serif;
+}
+nav.navbar, footer {
+    font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+

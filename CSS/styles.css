@@ -10,6 +10,10 @@
     position: relative;
     height: 50vh;
 }
+/* body:not(.navbar) {
+    position: relative;
+    top:200px;
+} */
 #startlerText {
     background-color: white;
     color: firebrick;
@@ -35,16 +39,17 @@
     margin: 20px 0px 50px 5px;
 }
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+body {
+    font-family: 'Poetsen One', sans-serif;
+}
+nav.navbar, footer {
+    font-family: Roboto, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 #blogs {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    /* align-items: ; */
+
 }
 .blogphoto {
     border-radius: 6px;
@@ -66,6 +71,7 @@
 }
 .whydonate {
     margin: 0px 30px 0px 30px;
+    line-height: 1.5;
 }
 @media only screen and (max-width: 654px) {
     #startlerText {

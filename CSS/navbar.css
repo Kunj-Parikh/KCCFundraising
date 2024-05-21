@@ -12,13 +12,18 @@ a:hover {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
+}
+body {
+    background-image: linear-gradient(to right top, #2986cc, #207dd5, #3171db, #4d63dc, #6b51d9, #a540ca, #cf28b5, #ed009a, #ff2d72, #ff614b, #ff9125, #f5bb09);
 }
 hr.sep {
-    background-color: #DD510B;
+    background-color: rgb(0, 163, 192);
     width: 50px;
     margin: auto;
     height: 7px;
     margin-bottom: 30px;
+    border: 0px;
 }
 
 .bigdonate {
@@ -48,8 +53,15 @@ html {
     align-items: center;
     padding: 1vh 2vw;
     background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(255,94,247,1) 17.8%, rgba(2,245,255,1) 100.2% );
+    position:fixed;
+    width: 100%;
 }
-
+body:not(.navbar):not(html) {
+    margin-top:calc(2vh + 70px);
+}
+.navbar {
+    margin-top: calc(-2vh - 70px);
+}
 
 .bar {
     display: block;
@@ -81,7 +93,7 @@ footer {
     color: white;
     padding: 20px;
     margin-top: 20px;
-    font-size: 20px;
+    font-size: 15px;
 }
 .copyright {
     text-align: center;
@@ -94,7 +106,7 @@ footer {
 
 @media only screen and (max-width: 768px) {
     .menu {
-        position:fixed;
+        position: fixed;
         left: -100%;
         top: 5rem;
         flex-direction: column;

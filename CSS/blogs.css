@@ -1,8 +1,16 @@
+body {
+    font-family: 'Lato', sans-serif;
+}
+nav.navbar {
+    font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
 .post {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    padding: 20px;
+    /* padding: 20px; */
     border-radius: 6px;
     margin-bottom: 50px;
+    overflow: hidden;
+    background-image: linear-gradient(to right top, #b4a7d6, #ad9fd3, #a697cf, #9f8fcc, #9887c8, #917fc4, #8b78c0, #8470bc, #7d67b7, #755fb2, #6e56ac, #674ea7);
 }
 .post:hover {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 12px 40px 0 rgba(0, 0, 0, 0.3);
@@ -17,5 +25,17 @@ hr {
     margin: 50px;
 }
 .container {
-    padding: 2px 16px;
+    padding: 30px 16px 30px 16px;
+}
+.blogImage {
+    width: 100%;
+}
+.btitle {
+    font-size: 20px;
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.btext {
+
 }
