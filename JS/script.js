@@ -10,7 +10,7 @@ class Blog {
 }
 console.log("Egwege");
 
-b1 = new Blog("May Infographic: Brain Cancer", "../img/b1.png", "05-08-2024");
+b1 = new Blog("May Infographic: Brain Cancer", "../img/blog/b1.png", "05-08-2024");
 b2 = new Blog("Title2", "https://www.w3schools.com/howto/img_snow_wide.jpg", "5-16-2024");
 b3 = new Blog("Title3", "https://www.w3schools.com/howto/img_snow_wide.jpg", "5-16-2024");
 const blogs = [b1, b2, b3];
