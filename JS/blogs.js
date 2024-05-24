@@ -15,7 +15,7 @@ class Blog{
 }
 const blogBody = document.querySelector(".main");
 
-b1 = new Blog("May Infographic: Brain Cancer", "../img/b1.png", "05-08-2024", "Go Gray in May! <br><br>In order to raise awareness, each month an infographic will be put up. This month's discusses brain cancer. <br><br>Help raise awareness one neuron at a time. 💡 <br><br>Fight against brain cancer with knowledge and hope.");
+b1 = new Blog("May Infographic: Brain Cancer", "../img/blog/b1.png", "05-08-2024", "Go Gray in May! <br><br>In order to raise awareness, each month an infographic will be put up. This month's discusses brain cancer. <br><br>Help raise awareness one neuron at a time. 💡 <br><br>Fight against brain cancer with knowledge and hope.");
 b2 = new Blog("Title2", "https://www.w3schools.com/howto/img_snow_wide.jpg", "5-16-2024", "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate a dignissimos quasi quibusdam, facere iste saepe provident quae dicta inventore delectus blanditiis. Facere alias officiis cum culpa voluptate possimus, iusto deleniti temporibus explicabo veritatis incidunt exercitationem eligendi quas rerum doloribus cumque quis qui! Repellat, aliquid?");
 b3 = new Blog("Title3", "https://www.w3schools.com/howto/img_snow_wide.jpg", "5-16-2024", "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate a dignissimos quasi quibusdam, facere iste saepe provident quae dicta inventore delectus blanditiis. Facere alias officiis cum culpa voluptate possimus, iusto deleniti temporibus explicabo veritatis incidunt exercitationem eligendi quas rerum doloribus cumque quis qui! Repellat, aliquid?");
 const blogs = [b1, b2, b3];
@@ -29,7 +29,12 @@ function addBlogs() {
         let postImg = document.createElement("img");
         postImg.classList.add("blogImage");
         postImg.src = blogs[i].imgHref;
-        divPost.appendChild(postImg);
+
+        let imgWrap = document.createElement("div");
+        imgWrap.classList.add("centerImage");
+        imgWrap.appendChild(postImg);
+
+        divPost.appendChild(imgWrap);
         
         let divContainer = document.createElement("div");
         divContainer.classList.add('container');

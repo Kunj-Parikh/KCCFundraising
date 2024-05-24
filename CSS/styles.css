@@ -5,15 +5,16 @@
 }
 #startler {
     z-index: -1;
-    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJGXZHEB2V3JqUGWGNS7Uq3oRJOi9iT5pCWY9-UdvOTw&s"); /* IMAGE NEEDED */
-    background-size: cover;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJGXZHEB2V3JqUGWGNS7Uq3oRJOi9iT5pCWY9-UdvOTw&s");
     position: relative;
     height: 50vh;
+    
+    /* Parallax */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
-/* body:not(.navbar) {
-    position: relative;
-    top:200px;
-} */
 #startlerText {
     background-color: white;
     color: firebrick;
@@ -49,12 +50,16 @@ nav.navbar, footer {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-
+    align-items: flex-end;
 }
+/*       */
 .blogphoto {
     border-radius: 6px;
     width: 300px;
 
+}
+.blogtext {
+    margin-top: 20px;
 }
 .recentblogs {
     margin-bottom: 30px;

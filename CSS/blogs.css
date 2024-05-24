@@ -39,3 +39,14 @@ hr {
 .btext {
 
 }
+.centerImage {
+    display: flex;
+    justify-content: center;
+}
+@media only screen and (min-width: 700px) {
+
+    .blogImage {
+        width: 60%;
+    }
+    
+}
