@@ -2,28 +2,36 @@
     text-align: center;
     color:#2b292e;
     margin: 30px;
+    font-size: x-large;
+}
+html, body {
+    overscroll-behavior-x: none;
 }
 #startler {
     z-index: -1;
-    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJGXZHEB2V3JqUGWGNS7Uq3oRJOi9iT5pCWY9-UdvOTw&s");
+    background-image: url("../img/HomescreenIMG.jpg");
     position: relative;
     height: 50vh;
     
     /* Parallax */
     background-attachment: fixed;
+    
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+
 }
 #startlerText {
-    background-color: white;
-    color: firebrick;
-    font-size: 10vw;
+    background-color: lavender;
+    color: black;
+    font-size: 5vw;
     font-weight: bold;
     margin: 0 auto;
     padding: 10px;
-    width: 50%;
+    width: 75%;
     text-align: center;
+    /* text-shadow:1px 1px 10px #fff, 1px 1px 10px #ccc; */
+    /* text-shadow: rgba(255,162,0,0.9) 0px 0px 39px; */
     position: absolute;
     top: 50%;
     left: 50%;
@@ -65,22 +73,21 @@ nav.navbar, footer {
     margin-bottom: 30px;
 }
 
-.buttonwrap {
-    /* margin-left: 30px; */
-    display: flex;
-    justify-content: center !important;
-}
-.bigdonate {
-    margin-top: 30px;
-    font-size:larger;
-}
+
 .whydonate {
     margin: 0px 30px 0px 30px;
     line-height: 1.5;
+    font-family: 'Lato', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 @media only screen and (max-width: 654px) {
     #startlerText {
         width: 75%;
+        font-size: 10vw;
+        
+    }
+    #startler {
+        background-position-x: -350px;
+        background-position-y: -100px;
     }
 
 }
@@ -88,4 +95,5 @@ nav.navbar, footer {
     .disappear {
         display: none;
     }
+    
 }

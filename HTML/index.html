@@ -1,16 +1,32 @@
 <!-- IDEAS:
 
     1. Make all blog images in blogs.html modals
-    
+    2. Add 3D model
+    3. Search function for blogs
+    4. Make scrollbar look better
 
 -->
 
 <!-- TO DO IN THIS COMMIT:
 
+
  -->
+ <!-- 
+    FINISHED:
+
+    1. Recent blogs -> recent infographics, recent weekly facts, bigger font size
+    2. Set all body text to Lato
+    3. Who we are, meet the members -> Poetson One
+    4. Home button above About Us
+    5. Bigfoot
+    6. Change ordering of members
+    7. Add BigDonate to about.html
+    8. Make why donate write up in a white modal
+    9. Bug fixes
+
+  -->
 
  <!-- BUGS:
-    
 
   -->
 
@@ -19,6 +35,8 @@
     1. Different labcoat photo
     2. Add favicon
     3. Alt text
+    4. Formatting of blogs.html: How to organize infographics and weekly facts
+        4a. 3 weekly facts and 3 infographics organization
 
  -->
 
@@ -31,8 +49,12 @@
     <link rel="stylesheet" href="../CSS/navbar.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>ACS Fundraising</title>
+    <link rel="icon" type="image/x-icon" href="../img/result (3).png">
+    
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poetsen+One&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -44,6 +66,7 @@
         </div>
         
         <ul class="menu">
+            <li class="nitem"><a href="index.html" class="nlink">Home</a></li>
             <li class="nitem"><a href="members.html" class="nlink">About Us</a></li>
             <li class="nitem"><a href="about.html" class="nlink">Why Donate</a></li>
             <li class="nitem"><a href="blogs.html" class="nlink">Past Blogs</a></li>
@@ -57,7 +80,7 @@
     </nav>
 
     <div id="startler">
-        <div id="startlerText">CANCER</div>
+        <div id="startlerText">KNIGHTS CONQUERING CANCER</div>
     </div>
     <div class="subsectext">
         <h1>Do your part to fight cancer!</h1>
@@ -70,22 +93,45 @@
         
     </div>
     <div class="recentBlogs">
-        <h3 class="subsectext">See some of our recent blogs</h3>
+        <h3 class="subsectext">See some of our recent infographics</h3>
         <div id="blogs">
             <div class="blog">
-                <img src="https://www.w3schools.com/css/rock600x400.jpg" alt="Blog 1 Photo" class="blogphoto">
+                <img src="https://www.w3schools.com/css/rock600x400.jpg" alt="Infographic 1 Photo" class="blogphoto">
                 <h3 class="blogtext">Lorem ipsum dolor sit amet.</h3>
                 <button class="sm" onclick="location.href = 'blogs.html#post1';">See more</button>
             </div>
             <!-- <hr class="disappear"> -->
             <div class="blog">
-                <img src="https://www.w3schools.com/css/rock600x400.jpg" alt="Blog 2 Photo" class="blogphoto">
+                <img src="https://www.w3schools.com/css/rock600x400.jpg" alt="Infographic 2 Photo" class="blogphoto">
                 <h3 class="blogtext">Lorem ipsum dolor sit amet.</h3>
                 <button class="sm" onclick="location.href = 'blogs.html#post2';">See more</button>
             </div>
             <!-- <hr class="disappear"> -->
             <div class="blog">
-                <img src="https://www.w3schools.com/css/rock600x400.jpg" alt="Blog 3 Photo" class="blogphoto">
+                <img src="https://www.w3schools.com/css/rock600x400.jpg" alt="Infographic 3 Photo" class="blogphoto">
+                <h3 class="blogtext">Lorem ipsum dolor sit amet.</h3>
+                <button class="sm" onclick="location.href = 'blogs.html#post3';">See more</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="recentWeeklyFacts">
+        <h3 class="subsectext">See some of our recent weekly facts</h3>
+        <div id="blogs">
+            <div class="blog">
+                <img src="https://www.w3schools.com/css/rock600x400.jpg" alt="Fact 1 Photo" class="blogphoto">
+                <h3 class="blogtext">Lorem ipsum dolor sit amet.</h3>
+                <button class="sm" onclick="location.href = 'blogs.html#post1';">See more</button>
+            </div>
+            <!-- <hr class="disappear"> -->
+            <div class="blog">
+                <img src="https://www.w3schools.com/css/rock600x400.jpg" alt="Fact 2 Photo" class="blogphoto">
+                <h3 class="blogtext">Lorem ipsum dolor sit amet.</h3>
+                <button class="sm" onclick="location.href = 'blogs.html#post2';">See more</button>
+            </div>
+            <!-- <hr class="disappear"> -->
+            <div class="blog">
+                <img src="https://www.w3schools.com/css/rock600x400.jpg" alt="Fact 3 Photo" class="blogphoto">
                 <h3 class="blogtext">Lorem ipsum dolor sit amet.</h3>
                 <button class="sm" onclick="location.href = 'blogs.html#post3';">See more</button>
             </div>
@@ -93,7 +139,7 @@
     </div>
     
     <div class="buttonwrap">
-        <button class="bigdonate" onclick="location.href = 'https://secure.acsevents.org/site/STR?fr_id=108592&pg=team&team_id=2739088';">DONATE</button>
+        <button class="bigdonate" onclick="location.href = 'https://secure.acsevents.org/site/STR?fr_id=108592&pg=team&team_id=2739088';">DONATE TODAY!</button>
     </div>
     <div>
         

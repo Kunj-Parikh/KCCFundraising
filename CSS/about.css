@@ -13,6 +13,11 @@
     line-height: 1.5;
     margin: 40px 40px 60px 40px;
     font-size: larger;
+    background-color: rgba(234, 243, 236, 0.822);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 35px;
+    border-radius: 6px;
+    font-family: "Lato", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 body {
     font-family: 'Poetsen One', sans-serif;
