@@ -10,7 +10,11 @@ nav.navbar {
     border-radius: 6px;
     margin-bottom: 50px;
     overflow: hidden;
-    background-image: linear-gradient(to right top, #b4a7d6, #ad9fd3, #a697cf, #9f8fcc, #9887c8, #917fc4, #8b78c0, #8470bc, #7d67b7, #755fb2, #6e56ac, #674ea7);
+    background-image: linear-gradient(255deg, #896790ff,
+        #bfadccff,
+        #dfbbdaff,
+        #f2bae4ff,
+        #ffe1f5ff);
 }
 .post:hover {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 12px 40px 0 rgba(0, 0, 0, 0.3);
@@ -36,9 +40,8 @@ hr {
     text-align: center;
     margin-bottom: 30px;
 }
-.btext {
 
-}
+
 .centerImage {
     display: flex;
     justify-content: center;

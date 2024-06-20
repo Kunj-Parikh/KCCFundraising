@@ -22,7 +22,13 @@
 body {
     font-family: 'Poetsen One', sans-serif;
 }
-nav.navbar, footer {
+nav.navbar {
     font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+footer {
+    position: absolute;
+    font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    bottom: 0;
 }
 
