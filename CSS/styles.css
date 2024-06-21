@@ -1,8 +1,11 @@
 .subsectext {
     text-align: center;
     color:#2b292e;
-    margin: 30px;
-    font-size: x-large;
+    /* margin: 5vh; */
+    margin: 10vh 30px 15vh 30px;
+    
+    font-size: 1.8rem;
+    /* font-size: x-large; */
 }
 html, body {
     overscroll-behavior-x: none;
@@ -12,36 +15,52 @@ html, body {
     background-image: url("../img/HomescreenIMG.jpg");
     position: relative;
     height: 50vh;
-    
-    /* Parallax */
+
+}
+#startlerContainer {
+    position: relative;
+    text-align: center;
+    color: white;
+    margin-bottom: 10vh;
+}
+#startlerImg {
     background-attachment: fixed;
     
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-
+    /* width: 100%; */
+    height: 88vh;
+    width: 100%;
+    object-fit: cover;
 }
 #startlerText {
-    background-color: lavender;
-    color: black;
-    font-size: 5vw;
-    font-weight: bold;
+    /* background-color: lavender;
+    /* color: black; */
+    font-size: 2.75rem;
+    /* font-weight: bold;
     margin: 0 auto;
     padding: 10px;
     width: 75%;
-    text-align: center;
+    text-align: center; */
     /* text-shadow:1px 1px 10px #fff, 1px 1px 10px #ccc; */
     /* text-shadow: rgba(255,162,0,0.9) 0px 0px 39px; */
+    /*position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    mix-blend-mode:screen; */
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    mix-blend-mode:screen;
+    color:white;
+
 }
 .sm {
-    background-color: #1B4DE4;
+    background-color: #f2bae4ff;
     border: 0px;
-    color: white;
+    color: rgb(12, 11, 11);
     border-radius: 16px;
     padding: 8px 14px;
     font-weight: 700;
@@ -51,6 +70,7 @@ html, body {
 body {
     font-family: 'Poetsen One', sans-serif;
 }
+
 nav.navbar, footer {
     font-family: Roboto, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -74,17 +94,12 @@ nav.navbar, footer {
 }
 
 
-.whydonate {
-    margin: 0px 30px 0px 30px;
-    line-height: 1.5;
-    font-family: 'Lato', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
 @media only screen and (max-width: 654px) {
-    #startlerText {
+    /* #startlerText {
         width: 75%;
         font-size: 10vw;
         
-    }
+    } */
     #startler {
         background-position-x: -350px;
         background-position-y: -100px;

@@ -4,22 +4,34 @@ body {
 nav.navbar {
     font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
+#navTop {
+    padding-top: 30px;
+}
 .post {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     /* padding: 20px; */
+    width: 30%;
     border-radius: 6px;
     margin-bottom: 50px;
     overflow: hidden;
+    flex: 0 0 325px;
     background-image: linear-gradient(to right top, #b4a7d6, #ad9fd3, #a697cf, #9f8fcc, #9887c8, #917fc4, #8b78c0, #8470bc, #7d67b7, #755fb2, #6e56ac, #674ea7);
 }
 .post:hover {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 12px 40px 0 rgba(0, 0, 0, 0.3);
     transition: .3s ease-in-out;
 }
+.overviewTitle {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.9rem;
+}
 .main {
     padding: 30px 35px 15px 35px;
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
 }
 hr {
     margin: 50px;
@@ -31,22 +43,16 @@ hr {
     width: 100%;
 }
 .btitle {
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 800;
     text-align: center;
     margin-bottom: 30px;
 }
 .btext {
-
+    text-align: center;
+    font-size: 1.1rem;
 }
 .centerImage {
     display: flex;
     justify-content: center;
-}
-@media only screen and (min-width: 700px) {
-
-    .blogImage {
-        width: 60%;
-    }
-    
 }

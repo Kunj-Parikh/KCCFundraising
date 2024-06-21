@@ -1,8 +1,3 @@
-<!-- For our bio page: put lab coat photo onto that page
-Introduce ourselves
-Why we’re doing this
- -->
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,6 +5,7 @@ Why we’re doing this
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Members</title>
     <script src="../JS/navbar.js" defer></script>
+    <link rel="icon" type="image/x-icon" href="../img/result (3).png">
     <link rel="stylesheet" href="../CSS/navbar.css">
     <link rel="stylesheet" href="../CSS/members.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -31,7 +27,7 @@ Why we’re doing this
             <li class="nitem"><a href="members.html" class="nlink">About Us</a></li>
             <li class="nitem"><a href="about.html" class="nlink">Why Donate</a></li>
             <li class="nitem"><a href="blogs.html" class="nlink">Past Blogs</a></li>
-            <li class="nitem"><a target="_blank" href="https://secure.acsevents.org/site/STR?fr_id=108592&pg=team&team_id=2739088" class="nlink">Donate</a></li>
+            <li class="nitem" id="navbar-donate"><a target="_blank" href="https://secure.acsevents.org/site/STR?fr_id=108592&pg=team&team_id=2739088" class="nlink">Donate</a></li>
         </ul>
         <div class="hamburger">
             <span class="bar"></span>
@@ -39,10 +35,10 @@ Why we’re doing this
             <span class="bar"></span>
         </div>
     </nav>
-    <img src="../img/labcoats.jpg" alt="Picture of all of us" style="width: 100%;">
+    <img src="../img/labcoats.jpg" id="labcoats" alt="Picture of all of us" style="transform: scale(1); width: 100%;">
     <div class="text">
-        <h2>Who We Are</h2>
-    <div id="bio">Thank you for taking the time to view this page. <br><br>
+        
+    <div id="bio" class="modalText">Thank you for taking the time to view this page. <br><br>
         At KCC (Knights Conquering Cancer), our mission is clear and passionate: we strive to raise as much money as possible to donate to the American Cancer Society (ACS). We are a team of eleven dedicated students from Bergen County Academies (BCA) in New Jersey, united by a common goal to fight cancer. Many of us are involved in advanced cell biology research, focusing on cancer-related projects. This academic background illustrates our commitment and equips us with the knowledge to approach our mission with scientific rigor and valuable insight. <br><br>Our team is organized into various “departments,” such as communications, advertising, and social media. We aim to officially establish the KCC as a recognized club within BCA, expanding our impact and spreading awareness for this devastating disease. Donate today. Do your part to fight cancer. 
         </div>
     </div>
@@ -50,18 +46,6 @@ Why we’re doing this
     <h2 class="text">Meet the Members</h2>
     <br>
     <div id="meetteam">
-        
-        <!-- <div class="flip-card">
-            <div class="inner">
-                <div class="front">
-                    <img src="https://www.w3schools.com/howto/img_avatar.png" alt="" class="profilePhoto">
-                </div>
-                <div class="back">
-                    <h1 class="name">John Doe</h1>
-                    <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, nam. Laboriosam, aperiam at ullam aspernatur placeat aut nesciunt modi porro.</p>
-                </div>
-            </div>
-        </div> -->
 
         <div class="card" id="EA">
             <img src="../img/members/elizabethan.jpg" alt="Elizabeth An" class="cardImage">
@@ -118,6 +102,25 @@ Why we’re doing this
             <h3 class="role">Head of Marketing</h3>
             <p class="title">Hello everyone! My name is Aidan Kim, and I am a freshman in the Business and Finance academy of BCA. Unfortunately, cancer is becoming more and more of a prevalent issue today. That is why I plan to support the compassionate, hardworking scientists that are tirelessly working on a cure for cancer. I am privileged with the opportunity to be a part of Knights Conquering Cancer. A little bit more about me is that I am an avid runner, I like playing sports and keeping fit, I watch movies and listen to lots of music, and I love hanging out with friends and family.</p>
         </div>
+
+        <div class="card" id="KP">
+            <img src="../img/members/kunjparikh.jpg" alt="Kunj Parikh" class="cardImage">
+            <h1 class="cardName">Kunj Parikh</h1>
+            <h3 class="role">Head Webmaster</h3>
+            <p class="title"> Hello everyone! My name is Kunj Parikh and I am a freshman in the ATCS (Academy of
+                Technology and Computer Science) at BCA. As the webmaster for our fundraising group, I am
+                passionate about both technology and fighting against cancer</p>
+        </div>
+
+        <div class="card" id="BS">
+            <img src="../img/members/bozhanshang.jpg" alt="Bozhan Shang" class="cardImage">
+            <h1 class="cardName">Bozhan Shang</h1>
+            <h3 class="role">Webmaster</h3>
+            <p class="title">Hey! I'm Bozhan Shang, class of '27 in the Academy for Technology and Computer Science at
+                Bergen County Academies. Although I mostly study CS, I'm also really passionate about medical science and
+                mathematics. I enjoy playing piano, basketball, and volleyball in my free time. Feel free to email me at <u><a href="mailto:bozhan.harry@gmail.com">bozhan.harry@gmail.com</a></u> anytime if you're up for a chat :D</p>
+        </div>
+        
         <div class="card" id="AP">
             <img src="../img/members/ashleypark.jpg" alt="Ashley Park" class="cardImage">
             <h1 class="cardName">Ashley Park</h1>
@@ -133,35 +136,14 @@ Why we’re doing this
             <p class="title">Hi! I'm Clara and I'm a freshman in AMST. Some of my hobbies include playing volleyball and the piano. I'm an event coordinator on Knights Conquering Cancer and the back up note-taker when Rachel's out. I hope that we can support all people affected by cancer!</p>
         </div>
         
-        <div class="card" id="KP">
-            <img src="../img/members/kunjparikh.jpg" alt="Kunj Parikh" class="cardImage">
-            <h1 class="cardName">Kunj Parikh</h1>
-            <h3 class="role">Head Webmaster</h3>
-            <p class="title"> Hello everyone! My name is Kunj Parikh and I am a freshman in the ATCS (Academy of
-                Technology and Computer Science) at BCA. As the webmaster for our fundraising group, I am
-                passionate about both technology and fighting against cancer</p>
-        </div>
-        
+    
         <div class="card" id="VR">
             <img src="../img/members/vedantirawal.jpeg" alt="Vedanti Rawal" class="cardImage">
             <h1 class="cardName">Vedanti Rawal</h1>
             <h3 class="role">Treasurer</h3>
             <p class="title">What's up guys! I'm Vedanti, a Frehman in Bergen County Academies. I'm in the Academy for the Advancement of Science and Technology and I am so grateful for this opportunity to better the lives of cancer patients through Knights Conquering Cancer. In my free time I love making jewelry, volunteering, practicing taekwondo, and painting. I also occasionally play volleyball and my favorite place to be in is the beach. Thanks for reading!</p>
         </div>
-        
 
-
-
-
-
-<!-- 
-
-        <div class="profile">
-            <img src="https://www.w3schools.com/css/rock600x400.jpg" alt="" style="width: 100%;">
-            <h1>John Doe</h1>
-            <p class="title">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus non dolorem ullam recusandae? Totam fugiat adipisci unde amet natus facilis!</p>
-        </div>
-         -->
     </div>
 
     <footer>
