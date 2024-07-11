@@ -7,21 +7,19 @@
     font-size: 1.8rem;
     /* font-size: x-large; */
 }
-html, body {
-    overscroll-behavior-x: none;
-}
-#startler {
+
+/* #startler {
     z-index: -1;
     background-image: url("../img/HomescreenIMG.jpg");
     position: relative;
     height: 50vh;
 
-}
+} */
 #startlerContainer {
     position: relative;
     text-align: center;
     color: white;
-    margin-bottom: 10vh;
+    /* margin-bottom: 10vh; */
 }
 #startlerImg {
     background-attachment: fixed;
@@ -30,14 +28,15 @@ html, body {
     background-repeat: no-repeat;
     background-size: cover;
     /* width: 100%; */
-    height: 88vh;
+    height: 70vh;
     width: 100%;
     object-fit: cover;
 }
 #startlerText {
     /* background-color: lavender;
     /* color: black; */
-    font-size: 2.75rem;
+    font-size: 3rem;
+    width: 100%;
     /* font-weight: bold;
     margin: 0 auto;
     padding: 10px;
@@ -73,6 +72,9 @@ body {
 
 nav.navbar, footer {
     font-family: Roboto, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.blog {
+    margin: 3vh 3vw 3vh 3vw;
 }
 #blogs {
     display: flex;
