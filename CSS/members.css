@@ -11,6 +11,15 @@ nav.navbar {
 .text {
     color: #71207dff;
 }
+#labcoats {
+    height: 70vh;
+    width: auto;
+
+}
+#mainCenter {
+    display: flex;
+    justify-content: center;
+}
 
 h2 {
     margin: 27px;
