@@ -43,7 +43,43 @@ hr.sep {
     text-align: center;
     animation: glow 1s ease-in-out infinite alternate;
 }
-  
+
+.dropdown {
+    overflow: hidden;
+}
+.dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+a:hover, .dropdown:hover .dropbtn {
+    background-color: inherit;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #d1acce;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown-content a {
+    /* float: none; */
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
 @keyframes glow {
     from {
         text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px purple, 0 0 40px purple, 0 0 50px purple, 0 0 60px purple, 0 0 70px purple;
