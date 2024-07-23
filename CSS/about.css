@@ -3,6 +3,7 @@
     margin-top: 30px;
     font-size: 35px;
     padding-top: 50px;
+    color: #71207dff;
 }
 
 .aboutImg {
@@ -14,8 +15,9 @@ figcaption {
     margin: 10px 0 0 0;
     font-family: Arial;
     font-weight: bold;
-    color: #bb3333;
+    color: #ffe1f5;
     font-size: 1.25rem;
+    
 }
 figure {
     padding: 5px;

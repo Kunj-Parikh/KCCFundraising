@@ -12,7 +12,7 @@ a:hover {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
+    color: #ffe1f5;
 }
 body {
     /* Vedanti's one */
@@ -25,6 +25,7 @@ body {
 }
 html, body {
     overscroll-behavior-x: none;
+    
 }
 hr.sep {
     /* background-color: rgb(0, 163, 192); */
@@ -45,11 +46,11 @@ hr.sep {
   
 @keyframes glow {
     from {
-        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px purple, 0 0 40px purple, 0 0 50px purple, 0 0 60px purple, 0 0 70px purple;
     }
     
     to {
-        text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+        text-shadow: 0 0 20px #fff, 0 0 30px #de4dff, 0 0 40px #de4dff, 0 0 50px #de4dff, 0 0 60px #de4dff, 0 0 70px #de4dff, 0 0 80px #de4dff;
     }
 }
 
@@ -66,11 +67,11 @@ hr.sep {
 }
 
 .bigdonate {
-    background-color: #d1acce;
+    background-color: #71207dff;
     border: 0;
     padding: 30px;
     border-radius: 10px;
-    color: black;
+    color: #ffe1f5;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 2rem;
     font-weight: 700;
@@ -81,7 +82,7 @@ hr.sep {
     border: 0;
     padding: 15px;
     border-radius: 10px;
-    color: black;
+    color: #71207dff;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     /* margin-top: 30px;
     margin-bottom: 30px; */
@@ -106,7 +107,7 @@ html {
     padding: 1vh 2vw;
     /* background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(255,94,247,1) 17.8%, rgba(2,245,255,1) 100.2% ); */
     /* background-image: linear-gradient(225deg, #86b9ffff, #80a0ffff, #7b90ffff, #7378ffff); */
-    background-color: #624478ff;
+    background-color: #71207dff;
     position:fixed;
     width: 100%;
 }
@@ -143,6 +144,10 @@ img {
 }
 .logo {
     padding-right: 10px;
+}
+.logoimg {
+    height: 12vh;
+    width: auto;
 }
 .buttonwrap {
     /* margin-left: 30px; */
@@ -196,9 +201,9 @@ body::-webkit-scrollbar-track-piece {
     .menu {
         position: fixed;
         left: -100%;
-        top: 5rem;
+        top: 10vh;
         flex-direction: column;
-        background-color: #e1d1af;
+        background-color: #71207dff;
         width: 100%;
         border-radius: 10px;
         text-align: center;
@@ -210,6 +215,7 @@ body::-webkit-scrollbar-track-piece {
     }
     .nitem {
         margin: 2.5rem 0;
+        
     }
     .hamburger {
         display: block;
@@ -227,5 +233,8 @@ body::-webkit-scrollbar-track-piece {
 
     .hamburger.active .bar:nth-child(3) {
         transform: translateY(-8px) rotate(-45deg);
+    }
+    .logoimg {
+        height: 10vh;
     }
 }

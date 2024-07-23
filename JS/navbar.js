@@ -8,5 +8,5 @@ hbgr.addEventListener('click', () => {
 
 const imgLink = document.querySelector(".logoimg");
 imgLink.addEventListener('click', () => {
-    window.location.href = "https://kunj-parikh.github.io/KCCFundraising/HTML/index.html";
+    window.location.href = "../HTML/index.html";
 });

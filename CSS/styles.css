@@ -1,12 +1,16 @@
 .subsectext {
     text-align: center;
-    color:#2b292e;
+    /* color:#71207dff !important; */
     /* margin: 5vh; */
     margin: 10vh 30px 15vh 30px;
     
     font-size: 1.8rem;
     /* font-size: x-large; */
 }
+h1,h2,h3 {
+    color: #71207dff;
+}
+
 
 /* #startler {
     z-index: -1;
@@ -35,7 +39,7 @@
 #startlerText {
     /* background-color: lavender;
     /* color: black; */
-    font-size: 3rem;
+    font-size: 4rem;
     width: 100%;
     /* font-weight: bold;
     margin: 0 auto;
@@ -102,6 +106,9 @@ nav.navbar, footer {
         font-size: 10vw;
         
     } */
+    #startlerText {
+        line-height: 1.5;
+    }
     #startler {
         background-position-x: -350px;
         background-position-y: -100px;

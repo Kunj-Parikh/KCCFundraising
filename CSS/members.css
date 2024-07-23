@@ -8,6 +8,9 @@ html {
 nav.navbar {
     font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
+.text {
+    color: #71207dff;
+}
 
 h2 {
     margin: 27px;
